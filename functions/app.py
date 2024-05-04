@@ -20,3 +20,14 @@ print(greeting_message)
 # file.write(greeting_message)
 
 print(greet("John"))
+
+
+def fn(n):
+    """
+    A function that calculates the square of a given number.
+    """
+    return n*n
+
+
+total = fn(6)
+print(total)
