@@ -6,7 +6,7 @@
 def greet():
     print("Hi! There")
     print("Welcome to my Github Account")
-    print("Tell me if there is another resource I can learn to advance my coding skills")
+    print("Tell me I can learn to advance my coding skills")
 
 
 # see how we can call or invoke python function below
