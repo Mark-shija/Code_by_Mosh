@@ -1,0 +1,19 @@
+items = [
+    ("product1", 10),
+    ("product2", 30),
+    ("product3", 20),
+    ("product4", 12)
+]
+
+price = []
+for item in items:
+    price.append(item[1])
+print(price)
+
+""" using mapp function to return a map object"""
+
+x = map(lambda item: item[1], items)
+object_member = []
+for item in x:
+    object_member.append(item)
+print(object_member)
