@@ -8,19 +8,35 @@
 class User():
     """ 
     let add a constructor in our class user
-
-
     """
-    def __init__(self, food="", walk=""):
+
+    def __init__(self, name=None, food=None, walk=None):
+        self.name = name
         self.food = food
         self.walk = walk
 
-    def __str__(self):
-        return f"({self.food}) ({self.walk})"
+    # def __str__(self):
+    #     """
+    #     Returns a string representation of the User object.
+    #     """
+    #     return (f"(name={self.name}, food={self.food}, walk={self.walk})")
 
     def Eat(self):
-        print(f"User now is time to eat {self.food} then walk by {self.walk}")
+        return (f"{self.name} now is time to eat {self.food} after eating {self.walk}")
 
-new_user = User("Ugali Maharage", "Own Foot")
+    def Run(self):
+        return (f"{self.name} dont walk, just run quickly")
+
+
+new_user = User("Mark", "Ugali Maharage", "walk")
+user2 = User("John", "Pizza", "walk")
+
 Action = new_user.Eat()
+Action2 = user2.Eat()
 print(Action)
+print(Action2)
+
+Run1 = new_user.Run()
+Run2 = user2.Run()
+print(Run1)
+print(Run2)

@@ -2,4 +2,5 @@
 
 course = "python"
 
-course = "Javascript \" C is sweetie"
+course = "Javascript \" Language is sweetie"
+print(course)
