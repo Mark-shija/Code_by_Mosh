@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+</head>
+
+<body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What
+            are browser developer tools</a> for more information).</p>
+
+    <script>
+        //  Javascript object Concepts
+
+        //  Constructor Function Naming
+
+        function Student(name, age) {
+            this.name = name;
+            this.age = age;
+            this.printInfo = function () {
+                console.log(`Hi there, my name is ${this.name} and I am ${this.age} years old`);
+            }
+
+        }
+
+        //  we use new keyword to create new object when using constructor function 
+        const student1 = new Student("mark", 27);
+
+        //  we call the method, using newly created object
+
+        student1.printInfo();
+
+    </script>
+</body>
+
+</html>
